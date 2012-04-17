@@ -10,7 +10,11 @@ $this->breadcrumbs=array(
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'test-form'
+	'id'=>'test-form',
+	'enableClientValidation'=>true,
+	'clientOptions'=>array(
+		'validateOnSubmit'=>true,
+	),
 )); ?>
 
 	<p class="note">Enter test Data.</p>
@@ -18,7 +22,7 @@ $this->breadcrumbs=array(
 	<div class="row">
 		<?php echo $form->labelEx($model,'data'); ?>
 		<?php echo $form->textArea($model,'data',array('rows'=>6, 'cols'=>50)); ?>
-		<?php //echo $form->error($model,'data'); ?>
+		<?php echo $form->error($model,'data'); ?>
 	</div>
 	<?php echo "you have submitted {$model->data} <br />"; ?>
 	<?php echo "{$model->result} <br />"; ?>

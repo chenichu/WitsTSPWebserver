@@ -116,6 +116,8 @@ class SiteController extends Controller
 			//$model->validate();
 			$model->data = $_POST['TestForm']['data'];
 			
+		if($model->validate())
+		{
 			$request = new HTTP_Request2("http://146.141.125.230/test.php?data={$model->data}", HTTP_Request2::METHOD_GET);
 			try {
 			    $response = $request->send();
@@ -128,7 +130,8 @@ class SiteController extends Controller
 			} catch (HTTP_Request2_Exception $e) {
 			    echo 'Error: ' . $e->getMessage();
 			}
-
+		}
+		
 			
 			//var_dump($model->data); die();
 		}
@@ -139,4 +142,5 @@ class SiteController extends Controller
 		'model'=>$model, // Model is passed to create.php View!
 	    ));
 	}
+
 }

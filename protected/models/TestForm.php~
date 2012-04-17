@@ -8,6 +8,7 @@
 class TestForm extends CFormModel
 {
 	public $data;
+	public $result;
 	
 	/**
 	 * Declares the validation rules.
@@ -15,6 +16,9 @@ class TestForm extends CFormModel
 	public function rules()
 	{
 		return array(
+		array('data','required'),
+		//array('data','numerical'),
+		array('data','authenticate','pattern'=>'/^([\n]?[0-9 ]+)$/'),
 		);
 	}
 
@@ -24,4 +28,12 @@ class TestForm extends CFormModel
 			'data'=>'Data',
 		);
 	}
+
+	public function authenticate($attribute,$params)
+	{
+		//$test = trim($this->$attribute, "\n");
+		if (!preg_match($params['pattern'], $this->$attribute))
+			$this->addError('data','Incorrect Data!');
+	}
+
 }
