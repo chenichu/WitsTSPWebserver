@@ -1013,3 +1013,87 @@ REQUEST_URI=/yii/ayiitest/index.php?r=site/test
 in /var/www/yii/ayiitest/protected/models/TestForm.php (35)
 in /var/www/yii/ayiitest/protected/controllers/SiteController.php (119)
 in /var/www/yii/ayiitest/index.php (13)
+2012/04/20 15:21:06 [error] [php] Undefined variable: data (/var/www/yii/ayiitest/protected/models/TestForm.php:38)
+Stack trace:
+#0 /var/www/yii/framework/base/CModel.php(158): CInlineValidator->validate()
+#1 /var/www/yii/ayiitest/protected/controllers/SiteController.php(120): TestForm->validate()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionTest()
+#3 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/CController.php(287): SiteController->runAction()
+#5 /var/www/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/yii/ayiitest/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/ayiitest/index.php?r=site/test
+in /var/www/yii/ayiitest/protected/models/TestForm.php (38)
+in /var/www/yii/ayiitest/protected/controllers/SiteController.php (120)
+in /var/www/yii/ayiitest/index.php (13)
+2012/04/20 15:32:05 [error] [php] Undefined variable: request (/var/www/yii/ayiitest/protected/controllers/SiteController.php:125)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(287): SiteController->runAction()
+#1 /var/www/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#2 /var/www/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#3 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/yii/ayiitest/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/ayiitest/index.php?r=site/test
+in /var/www/yii/ayiitest/protected/controllers/SiteController.php (125)
+in /var/www/yii/ayiitest/index.php (13)
+2012/04/20 15:34:20 [error] [php] Undefined variable: data (/var/www/yii/ayiitest/protected/models/TestForm.php:39)
+Stack trace:
+#0 /var/www/yii/framework/base/CModel.php(158): CInlineValidator->validate()
+#1 /var/www/yii/ayiitest/protected/controllers/SiteController.php(120): TestForm->validate()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionTest()
+#3 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/CController.php(287): SiteController->runAction()
+#5 /var/www/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/yii/ayiitest/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/ayiitest/index.php?r=site/test
+in /var/www/yii/ayiitest/protected/models/TestForm.php (39)
+in /var/www/yii/ayiitest/protected/controllers/SiteController.php (120)
+in /var/www/yii/ayiitest/index.php (13)
+2012/04/20 15:46:48 [error] [php] Undefined variable: data (/var/www/yii/ayiitest/protected/models/TestForm.php:41)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/CController.php(287): SiteController->runAction()
+#2 /var/www/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#3 /var/www/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#4 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/yii/ayiitest/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/ayiitest/index.php?r=site/test
+in /var/www/yii/ayiitest/protected/models/TestForm.php (41)
+in /var/www/yii/ayiitest/protected/controllers/SiteController.php (122)
+in /var/www/yii/ayiitest/index.php (13)
+2012/04/20 15:47:30 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.data" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/ayiitest/protected/controllers/SiteController.php(123): CComponent->__get('data')
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionTest()
+#2 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('test')
+#6 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/test
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/test
+---
+2012/04/20 15:50:35 [error] [php] Undefined variable: data (/var/www/yii/ayiitest/protected/models/TestForm.php:43)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/CController.php(287): SiteController->runAction()
+#2 /var/www/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#3 /var/www/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#4 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/yii/ayiitest/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/ayiitest/index.php?r=site/test
+in /var/www/yii/ayiitest/protected/models/TestForm.php (43)
+in /var/www/yii/ayiitest/protected/controllers/SiteController.php (122)
+in /var/www/yii/ayiitest/index.php (13)

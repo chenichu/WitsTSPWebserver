@@ -115,10 +115,14 @@ class SiteController extends Controller
 //			$model->attributes = $dummy;
 			//$model->validate();
 			$model->data = $_POST['TestForm']['data'];
+			//var_dump($model->data); die();
 			
 		if($model->validate())
 		{
-			$request = new HTTP_Request2("http://146.141.125.230/test.php?data={$model->data}", HTTP_Request2::METHOD_GET);
+			$model->modifyData();
+			//var_dump($model->data);
+			$request = new HTTP_Request2("http://146.141.125.230/run_mpi.php?data=". urlencode($model->formatted_data), HTTP_Request2::METHOD_GET);
+			//$request->
 			try {
 			    $response = $request->send();
 			    if (200 == $response->getStatus()) {

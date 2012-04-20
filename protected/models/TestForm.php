@@ -8,6 +8,7 @@
 class TestForm extends CFormModel
 {
 	public $data;
+	public $formatted_data;
 	public $result;
 	
 	/**
@@ -18,7 +19,7 @@ class TestForm extends CFormModel
 		return array(
 		array('data','required'),
 		//array('data','numerical'),
-		array('data','authenticate','pattern'=>'/^([\n]?[0-9 ]+)$/m'),
+		array('data','validateInput','pattern'=>'/^([\n]?[0-9 ]+)$/m'),
 		);
 	}
 
@@ -29,11 +30,18 @@ class TestForm extends CFormModel
 		);
 	}
 
-	public function authenticate($attribute,$params)
+	public function validateInput($attribute,$params)
 	{
 		//$test = trim($this->$attribute, "\n");
 		if (!preg_match($params['pattern'], $this->$attribute))
 			$this->addError('data','Incorrect Data!');
 	}
+	
+	public function modifyData()
+	{
+		//var_dump($this->data);
+		$this->formatted_data = preg_replace('!\s+!', ' ', $this->data);
+		//var_dump($this->formatted_data);
+	} 
 
 }
