@@ -9,6 +9,7 @@ class TestForm extends CFormModel
 {
 	public $data;
 	public $formatted_data;
+	public $squareSize;
 	public $result;
 	
 	/**
@@ -18,8 +19,8 @@ class TestForm extends CFormModel
 	{
 		return array(
 		array('data','required'),
-		//array('data','numerical'),
 		array('data','validateInput','pattern'=>'/^([\n]?[0-9 ]+)$/m'),
+		array('data','squareMatrixCheck'),
 		);
 	}
 
@@ -43,5 +44,13 @@ class TestForm extends CFormModel
 		$this->formatted_data = preg_replace('!\s+!', ' ', $this->data);
 		//var_dump($this->formatted_data);
 	} 
-
+	
+	public function squareMatrixCheck()
+	{
+		$formatted_data_array = explode(" ", $this->formatted_data);
+		var_dump($formatted_data_array);
+		$square_size = pow((int)$formatted_data_array[0],2);
+		if (count($formatted_data_array) != $square_size+1)
+			$this->addError('data','Cities are not a square matrix!');
+	}
 }

@@ -26,19 +26,39 @@
 	</div><!-- header -->
 
 	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
+		<?php 
+		if (Yii::app()->user->getName()=== 'admin')
+		{
+			$this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('url'=>array('/site/page', 'view'=>'about'), 'label'=>'About'),
-				array('url'=>array('/site/page', 'view'=>'manie'), 'label'=>'Maps'),
 				array('label'=>'Test', 'url'=>array('/site/test')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('url'=>array('/site/page', 'view'=>'googlemaps'), 'label'=>'Distance Matrix'),
-				array('url'=>array('/site/page', 'view'=>'interactive'), 'label'=>'interactive'),
+				array('url'=>array('/site/page', 'view'=>'about'), 'label'=>'About'),
+				array('label'=>'Contact Us', 'url'=>array('/site/contact')),
+				array('url'=>array('/user', 'view'=>'user'), 'label'=>'Admin Tasks'),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
-		)); ?>
+		)); 
+		}
+		else 
+		{
+			$this->widget('zii.widgets.CMenu',array(
+			'items'=>array(
+				array('label'=>'Home', 'url'=>array('/site/index')),
+				array('label'=>'Test', 'url'=>array('/site/test')),
+				array('url'=>array('/site/page', 'view'=>'googlemaps'), 'label'=>'Distance Matrix'),
+				array('url'=>array('/site/page', 'view'=>'about'), 'label'=>'About'),
+				array('label'=>'Contact Us', 'url'=>array('/site/contact')),
+				array('url'=>array('/user/create', 'view'=>'create'), 'label'=>'Register'),
+				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+			),
+		)); 
+
+		}
+			?>
 	</div><!-- mainmenu -->
 	<?php //if(isset($this->breadcrumbs)):?>
 	<?php if(false):?>

@@ -8,13 +8,20 @@
 
 <p>Congratulations! You are wise to use this application to make your everyday travel, a walk in the park.</p>
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <tt><?php echo __FILE__; ?></tt></li>
-	<li>Layout file: <tt><?php echo $this->getLayoutFile('main'); ?></tt></li>
-</ul>
+<?php if (Yii::app()->user->getName()=== 'admin') : ?>
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+<p> To view/change/modify Users on TSP database, click <a href="../ayiitest/index.php?r=user">here</a> </p>
+		
+
+<?php endif; ?> 
+<!-- $image = Yii::app()-> image->load('images/van.jpg');
+$image->resize(400, 100)->rotate(-45)->quality(75)->sharpen(20);
+$image->render(); -->
+
+<!-- <p align="center"> <img src="images/DHL.jpg" alt="Service Delivery" align="middle" border="1" />
+<img src="images/tspMan.jpg" alt="Service Delivery" align="middle" border="1" /> </p>  -->
+
+
+<p> To view and use normal map services, please visit
+<a href="http://maps.google.co.za">Google Maps</a>
+</p>

@@ -120,19 +120,22 @@ class SiteController extends Controller
 		if($model->validate())
 		{
 			$model->modifyData();
-			//var_dump($model->data);
-			$request = new HTTP_Request2("http://146.141.125.230/run_mpi.php?data=". urlencode($model->formatted_data), HTTP_Request2::METHOD_GET);
-			//$request->
-			try {
-			    $response = $request->send();
-			    if (200 == $response->getStatus()) {
-				$model->result = $response->getBody();
-			    } else {
-				echo 'Unexpected HTTP status: ' . $response->getStatus() . ' ' .
-				     $response->getReasonPhrase();
-			    }
-			} catch (HTTP_Request2_Exception $e) {
-			    echo 'Error: ' . $e->getMessage();
+			if ($model->squareMatrixCheck())
+			{
+				//var_dump($model->data);
+				/*$request = new HTTP_Request2("http://146.141.125.230/run_mpi.php?data=". urlencode($model->formatted_data), HTTP_Request2::METHOD_GET);
+				//$request->
+				try {
+			    	$response = $request->send();
+			    	if (200 == $response->getStatus()) {
+					$model->result = $response->getBody();
+			    	} else {
+					echo 'Unexpected HTTP status: ' . $response->getStatus() . ' ' .
+					     $response->getReasonPhrase();
+			   	 }
+				} catch (HTTP_Request2_Exception $e) {
+			    	echo 'Error: ' . $e->getMessage();
+				}*/
 			}
 		}
 		

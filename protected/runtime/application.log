@@ -1097,3 +1097,235 @@ REQUEST_URI=/yii/ayiitest/index.php?r=site/test
 in /var/www/yii/ayiitest/protected/models/TestForm.php (43)
 in /var/www/yii/ayiitest/protected/controllers/SiteController.php (122)
 in /var/www/yii/ayiitest/index.php (13)
+2012/04/27 16:27:14 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.image" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(106): CComponent->__get('image')
+#1 /var/www/yii/ayiitest/protected/views/site/index.php(12): CModule->__get('image')
+#2 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#3 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', NULL, true)
+#4 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', NULL, true)
+#5 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#6 /var/www/yii/ayiitest/protected/controllers/SiteController.php(34): CController->render('index')
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('index')
+#12 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#13 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/index
+---
+2012/04/27 16:27:49 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.image" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(106): CComponent->__get('image')
+#1 /var/www/yii/ayiitest/protected/views/site/index.php(12): CModule->__get('image')
+#2 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#3 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', NULL, true)
+#4 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', NULL, true)
+#5 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#6 /var/www/yii/ayiitest/protected/controllers/SiteController.php(34): CController->render('index')
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('index')
+#12 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#13 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/index
+---
+2012/04/27 16:27:51 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.image" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(106): CComponent->__get('image')
+#1 /var/www/yii/ayiitest/protected/views/site/index.php(12): CModule->__get('image')
+#2 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#3 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', NULL, true)
+#4 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', NULL, true)
+#5 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#6 /var/www/yii/ayiitest/protected/controllers/SiteController.php(34): CController->render('index')
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('index')
+#12 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#13 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/index
+---
+2012/04/27 16:28:57 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.image" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(106): CComponent->__get('image')
+#1 /var/www/yii/ayiitest/protected/views/site/index.php(12): CModule->__get('image')
+#2 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#3 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', NULL, true)
+#4 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', NULL, true)
+#5 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#6 /var/www/yii/ayiitest/protected/controllers/SiteController.php(34): CController->render('index')
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('index')
+#12 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#13 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/index
+---
+2012/04/27 16:28:58 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.image" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(106): CComponent->__get('image')
+#1 /var/www/yii/ayiitest/protected/views/site/index.php(12): CModule->__get('image')
+#2 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#3 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', NULL, true)
+#4 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', NULL, true)
+#5 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#6 /var/www/yii/ayiitest/protected/controllers/SiteController.php(34): CController->render('index')
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('index')
+#12 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#13 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/index
+---
+2012/04/27 16:28:59 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.image" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(106): CComponent->__get('image')
+#1 /var/www/yii/ayiitest/protected/views/site/index.php(12): CModule->__get('image')
+#2 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#3 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', NULL, true)
+#4 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', NULL, true)
+#5 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#6 /var/www/yii/ayiitest/protected/controllers/SiteController.php(34): CController->render('index')
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('index')
+#12 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#13 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/index
+---
+2012/04/30 12:02:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testdrive.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
+in /var/www/yii/ayiitest/index.php (13)
+2012/04/30 12:49:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/admin')
+#9 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=user/admin
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/04/30 12:49:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/admin')
+#9 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=user/admin
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/04/30 13:23:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('page')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/page')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=user/page&view=create
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/login
+---
+2012/04/30 13:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('page')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/page')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=user/page&view=create
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/page&view=create
+---
+2012/04/30 13:52:36 [error] [php] Trying to get property of non-object (/var/www/yii/ayiitest/protected/components/UserIdentity.php:37)
+Stack trace:
+#0 /var/www/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute()
+#1 /var/www/yii/framework/base/CModel.php(158): CInlineValidator->validate()
+#2 /var/www/yii/ayiitest/protected/controllers/SiteController.php(91): LoginForm->validate()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#4 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(287): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/yii/ayiitest/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/ayiitest/index.php?r=site/login
+in /var/www/yii/ayiitest/protected/components/UserIdentity.php (37)
+in /var/www/yii/ayiitest/protected/models/LoginForm.php (52)
+in /var/www/yii/ayiitest/protected/controllers/SiteController.php (91)
+2012/04/30 14:12:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/admin')
+#9 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=user/admin
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/login
+---
+2012/04/30 14:47:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('index.php')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('index.php')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/index.php')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=user/index.php
+---
+2012/04/30 14:48:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('index.php')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('index.php')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/index.php')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=user/index.php
+---
