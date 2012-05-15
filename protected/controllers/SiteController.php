@@ -122,6 +122,7 @@ class SiteController extends Controller
 			$model->modifyData();
 			if ($model->squareMatrixCheck())
 			{
+				echo "hello";
 				//var_dump($model->data);
 				/*$request = new HTTP_Request2("http://146.141.125.230/run_mpi.php?data=". urlencode($model->formatted_data), HTTP_Request2::METHOD_GET);
 				//$request->
@@ -148,6 +149,62 @@ class SiteController extends Controller
 	    $this->render('test',array(
 		'model'=>$model, // Model is passed to create.php View!
 	    ));
+	}
+	
+	public function actionDistance() {
+	
+		$model=new DistanceForm;
+	
+		/* Code for validation and redirect upon save. */
+		if(isset($_POST['DistanceForm']))
+		{
+			//			$dummy = $_POST['TestForm'];
+			//			$model->attributes = $dummy;
+			//$model->validate();
+			$model->originsA = $_POST['DistanceForm']['originsA'];
+			//var_dump($model->data); die();
+				
+			/*if($model->validate())
+			{
+				$model->modifyData();
+				if ($model->squareMatrixCheck())
+				{
+					echo "hello";
+					//var_dump($model->data);
+					/*$request = new HTTP_Request2("http://146.141.125.230/run_mpi.php?data=". urlencode($model->formatted_data), HTTP_Request2::METHOD_GET);
+					 //$request->
+					try {
+					$response = $request->send();
+					if (200 == $response->getStatus()) {
+					$model->result = $response->getBody();
+					} else {
+					echo 'Unexpected HTTP status: ' . $response->getStatus() . ' ' .
+					$response->getReasonPhrase();
+					}
+					} catch (HTTP_Request2_Exception $e) {
+					echo 'Error: ' . $e->getMessage();
+					}*/
+				//}
+			//}
+	
+				
+			//var_dump($model->data); die();
+		}
+	
+	
+		// If not saved, render the create View:
+		$this->render('Distance',array(
+				'model'=>$model, // Model is passed to create.php View!
+		));
+	}
+	
+	public function actionSubmitData(){
+		$temp;
+		if(isset($_POST['rawDistance']))
+		{
+			$this -> $temp;	
+			echo $temp;
+		}
 	}
 
 }

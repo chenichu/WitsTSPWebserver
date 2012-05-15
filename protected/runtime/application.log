@@ -1329,3 +1329,1123 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/yii/ayiitest/index.php?r=user/index.php
 ---
+2012/05/01 16:49:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "distance".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('distance')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=distance
+---
+2012/05/01 16:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Distance.php".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('Distance.php')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=Distance.php
+---
+2012/05/01 16:51:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "test".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=test
+---
+2012/05/01 16:51:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "test.php".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test.php')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=test.php
+---
+2012/05/01 16:51:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "Distance" was not found.' in /var/www/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('Distance')
+#1 /var/www/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /var/www/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/page&view=Distance
+---
+2012/05/01 16:56:37 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.data" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('data')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), 'data')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), 'data', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), 'data', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/index
+---
+2012/05/01 16:59:06 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.data" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('data')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), 'data')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), 'data', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), 'data', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/index
+---
+2012/05/01 17:00:40 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.data" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('data')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), 'data')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), 'data', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), 'data', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/index
+---
+2012/05/01 17:01:43 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.data" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('data')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), 'data')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), 'data', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), 'data', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/index
+---
+2012/05/01 21:06:45 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.data" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('data')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), 'data')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), 'data', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), 'data', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:12:44 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:15:16 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:15:19 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:18:01 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:18:01 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:18:01 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:18:02 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:18:02 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:18:02 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:18:02 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:18:02 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:18:03 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/01 21:18:03 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/04 10:15:20 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/05/04 10:19:46 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/05/04 10:22:51 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/05/04 10:22:57 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/05/04 10:23:42 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/05/04 10:23:43 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/05/04 10:23:45 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/05/04 10:23:45 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/05/04 10:23:45 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=user/index
+---
+2012/05/04 10:30:29 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+---
+2012/05/15 10:10:37 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/15 10:18:25 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/15 10:18:27 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/
+---
+2012/05/15 10:18:53 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:04 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:05 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:05 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:06 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:06 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:06 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:06 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:06 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:07 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:07 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:07 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:07 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 10:20:08 [error] [exception.CException] exception 'CException' with message 'Property "DistanceForm.$originsA" is not defined.' in /var/www/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2044): CComponent->__get('$originsA')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(1258): CHtml::resolveValue(Object(DistanceForm), '$originsA')
+#2 /var/www/yii/framework/web/widgets/CActiveForm.php(620): CHtml::activeTextArea(Object(DistanceForm), '$originsA', Array)
+#3 /var/www/yii/ayiitest/protected/views/site/Distance.php(24): CActiveForm->textArea(Object(DistanceForm), '$originsA', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/ay...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/ay...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/ay...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('Distance', Array, true)
+#8 /var/www/yii/ayiitest/protected/controllers/SiteController.php(198): CController->render('Distance', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionDistance()
+#10 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('Distance')
+#14 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/Distance')
+#15 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=site/Distance
+HTTP_REFERER=http://localhost/yii/ayiitest/index.php?r=site/page&view=googlemaps
+---
+2012/05/15 14:40:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pos/site/page".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('pos/site/page')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=pos/site/page&view=rawDistance
+---
+2012/05/15 14:41:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pos/sitte/page".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('pos/sitte/page')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=pos/sitte/page&view=rawDistance
+---
+2012/05/15 14:41:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pos/sitte/page".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('pos/sitte/page')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=pos/sitte/page&view=rawDistance
+---
+2012/05/15 14:41:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/site/page".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('post/site/page')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=post/site/page&view=rawDistance
+---
+2012/05/15 14:41:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('post')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/ayiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/ayiitest/index.php?r=post
+---
