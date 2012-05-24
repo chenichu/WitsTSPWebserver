@@ -33,7 +33,7 @@
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'Test', 'url'=>array('/site/test')),
-				array('label'=>'Route Planning', 'url'=>array('site/page', 'view'=>'rawDistance')),
+				array('label'=>'Route Planning', 'url'=>array('site/page', 'view'=>'gmaps')),
 				//array('label'=>'Route Planning', 'url'=>array('/site/Distance')),
 				array('url'=>array('/site/page', 'view'=>'googlemaps'), 'label'=>'Distance Matrix'),
 				array('url'=>array('/site/page', 'view'=>'about'), 'label'=>'About'),
@@ -51,7 +51,7 @@
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'Test', 'url'=>array('/site/test')),
 				//array('label'=>'Route Planning', 'url'=>array('/site/Distance')),
-				array('label'=>'Route Planning', 'url'=>array('site/page', 'view'=>'rawDistance')),
+				array('label'=>'Route Planning', 'url'=>array('site/page', 'view'=>'gmaps')),
 				array('url'=>array('/site/page', 'view'=>'googlemaps'), 'label'=>'Distance Matrix'),
 				array('url'=>array('/site/page', 'view'=>'about'), 'label'=>'About'),
 				array('label'=>'Contact Us', 'url'=>array('/site/contact')),

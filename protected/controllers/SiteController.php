@@ -206,5 +206,47 @@ class SiteController extends Controller
 			echo $temp;
 		}
 	}
+	
+	public function actionDistanceMatrix(){
+		if(isset($_POST['json']))
+		{
+			$temp = $_POST['json'];
+			//$temp = str_replace("\'", '"', $POST['json']);
+			$myFile = "TSPData.json";
+			$fh = fopen($myFile, 'w');
+			
+			fwrite($fh, str_replace("'", '"', $temp));
+			fclose($fh);
+		}
+	}
+	
+	public function actionResultMatrix(){
+ 			$temp = file_get_contents("php://input");
+ 			
+ 			if(!$temp){
+				echo "input is empty";
+ 			}
+ 			else 
+ 			{
+// 			$temp = CJSON::decode($temp,TRUE);
+		echo $temp;
+//			echo http_get_request_body();
+// 			$temp = $_POST['json']; 
+			//echo $temp;
+			//echo fgets($temp,1024);
+			//$temp = str_replace("\'", '"', $POST['json']);
+ 			$myFile = "TSPResults.json";
+ 			$fh = fopen($myFile, 'w');
+				
+			fwrite($fh, $temp);
+ 			fclose($fh);
+ 			echo "sucess:-)";
+ 			}
+	}
+	
+	public function actionGetResults() {
+		$fh = file_get_contents("TSPResults.json");
+		echo $fh;
+	}
 
 }
